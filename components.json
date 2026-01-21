@@ -21,167 +21,6 @@
     "repo": "meganukebmp/Switch_90DNS_tester",
     "source_type": "github_release"
   },
-  "DowngradeFixer": {
-    "asset_info": {
-      "version": "1.0.0"
-    },
-    "asset_patterns": [
-      {
-        "pattern": "DowngradeFixer-*.zip",
-        "processing_steps": [
-          {
-            "action": "unzip_to_root"
-          }
-        ]
-      }
-    ],
-    "category": "Payloads",
-    "description": "Payload to fix the brick when downgrading from 21.X.X to 20.X.X",
-    "name": "DowngradeFixer",
-    "repo": "sthetix/DowngradeFixer",
-    "source_type": "github_release"
-  },
-  "FuseCheck": {
-    "asset_info": {
-      "version": "1.0.0"
-    },
-    "asset_patterns": [
-      {
-        "pattern": "FuseCheck*.zip",
-        "processing_steps": [
-          {
-            "action": "unzip_to_root"
-          }
-        ]
-      }
-    ],
-    "category": "Payloads",
-    "description": "",
-    "name": "FuseCheck",
-    "repo": "sthetix/FuseCheck",
-    "source_type": "github_release"
-  },
-  "Goldleaf": {
-    "asset_info": {
-      "version": "1.2.0"
-    },
-    "asset_patterns": [
-      {
-        "pattern": "Goldleaf.nro",
-        "processing_steps": [
-          {
-            "action": "copy_file",
-            "target_path": "/switch/"
-          }
-        ]
-      }
-    ],
-    "category": "Homebrew Apps",
-    "description": "Multipurpose homebrew tool for Nintendo Switch",
-    "name": "Goldleaf",
-    "repo": "XorTroll/Goldleaf",
-    "source_type": "github_release"
-  },
-  "HATS-Tools": {
-    "asset_info": {
-      "version": "1.5.4"
-    },
-    "asset_patterns": [
-      {
-        "pattern": "hats-tools-*.zip",
-        "processing_steps": [
-          {
-            "action": "unzip_to_root"
-          }
-        ]
-      }
-    ],
-    "category": "Homebrew Apps",
-    "description": "HATS Pack and firmware downloader, installer and uninstaller",
-    "name": "HATS-Tools",
-    "repo": "sthetix/HATS-Tools",
-    "source_type": "github_release"
-  },
-  "Lockpick_RCM_Pro": {
-    "asset_info": {
-      "version": "1.9.16"
-    },
-    "asset_patterns": [
-      {
-        "pattern": "Lockpick*.zip",
-        "processing_steps": [
-          {
-            "action": "unzip_to_root"
-          }
-        ]
-      }
-    ],
-    "category": "Payloads",
-    "description": "Prod.keys and Prodinfo dumper",
-    "name": "Lockpick_RCM_Pro",
-    "repo": "sthetix/Lockpick_RCM_Pro",
-    "source_type": "github_release"
-  },
-  "NetMan": {
-    "asset_info": {
-      "version": "1.0.0"
-    },
-    "asset_patterns": [
-      {
-        "pattern": "NetMan.zip",
-        "processing_steps": [
-          {
-            "action": "unzip_to_root"
-          }
-        ]
-      }
-    ],
-    "category": "Payloads",
-    "description": "Nintendo Switch network configuration tool for managing online/offline modes",
-    "name": "NetMan",
-    "repo": "sthetix/NetMan",
-    "source_type": "github_release"
-  },
-  "Sigpatches": {
-    "asset_info": {
-      "version": "1.9.8"
-    },
-    "asset_patterns": [
-      {
-        "pattern": "SystemEnhancer*.zip",
-        "processing_steps": [
-          {
-            "action": "unzip_to_root"
-          }
-        ]
-      }
-    ],
-    "category": "Patches",
-    "description": "Signature patches to run games",
-    "name": "Sigpatches",
-    "repo": "NexlifyHub/SystemEnhancer",
-    "source_type": "github_release"
-  },
-  "Warmboot-Extractor": {
-    "asset_info": {
-      "version": "1.0.0"
-    },
-    "asset_patterns": [
-      {
-        "pattern": "Warmboot-Extractor-*.zip",
-        "processing_steps": [
-          {
-            "action": "unzip_to_root"
-          }
-        ]
-      }
-    ],
-    "category": "Payloads",
-    "description": "",
-    "name": "Warmboot-Extractor",
-    "repo": "sthetix/Warmboot-Extractor",
-    "source_type": "github_release"
-  },
   "aio_updater": {
     "asset_info": {
       "version": "2.23.3"
@@ -222,34 +61,13 @@
     "repo": "Atmosphere-NX/Atmosphere",
     "source_type": "github_release"
   },
-  "dbi_ru": {
+  "breeze_beta": {
     "asset_info": {
-      "version": "DBI.863.ru.zip"
+      "version": "beta99s_pr3"
     },
     "asset_patterns": [
       {
-        "pattern": "DBI*.zip",
-        "processing_steps": [
-          {
-            "action": "unzip_to_path",
-            "target_path": "/switch/DBI_RU/"
-          }
-        ]
-      }
-    ],
-    "category": "Homebrew Apps",
-    "description": "App / Game installer",
-    "name": "DBI RU",
-    "repo": "sthetix/dbi",
-    "source_type": "github_release"
-  },
-  "dns_mitm_manager": {
-    "asset_info": {
-      "version": "0.2.0"
-    },
-    "asset_patterns": [
-      {
-        "pattern": "DNS-MITM_Manager.zip",
+        "pattern": "Breeze.zip",
         "processing_steps": [
           {
             "action": "unzip_to_root"
@@ -257,10 +75,31 @@
         ]
       }
     ],
-    "category": "Tesla Overlays",
-    "description": "Tesla overlay for managing DNS redirection.",
-    "name": "DNS MITM Manager",
-    "repo": "sthetix/DNS-MITM_Manager",
+    "category": "Homebrew Apps",
+    "description": "A Nintendo Switch game cheating tool designed to work seamlessly with Atmosphere's cheatVM.",
+    "name": "Breeze Beta",
+    "repo": "tomvita/Breeze-Beta",
+    "source_type": "github_release"
+  },
+  "dbi": {
+    "asset_info": {
+      "version": "863ru"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "latest.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_path",
+            "target_path": "/switch/DBI/"
+          }
+        ]
+      }
+    ],
+    "category": "Homebrew Apps",
+    "description": "App / Game installer",
+    "name": "DBI",
+    "repo": "rashevskyv/dbi",
     "source_type": "github_release"
   },
   "edizon_overlay": {
@@ -305,24 +144,51 @@
     "repo": "XorTroll/emuiibo",
     "source_type": "github_release"
   },
-  "hekate": {
+  "fps_locker": {
     "asset_info": {
-      "version": "v6.5.0"
+      "version": "3.2.3"
     },
     "asset_patterns": [
       {
-        "pattern": "hekate-ext*.zip",
+        "pattern": "FPSLocker.ovl",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/.overlays/"
+          }
+        ]
+      }
+    ],
+    "category": "Tesla Overlays",
+    "description": "",
+    "name": "FPSLocker",
+    "repo": "masagrator/FPSLocker",
+    "source_type": "github_release"
+  },
+  "hekate": {
+    "asset_info": {
+      "version": "v6.5.1"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "hekate_ctcaer_*_Nyx_*.zip",
         "processing_steps": [
           {
             "action": "unzip_to_root"
+          },
+          {
+            "action": "find_and_rename",
+            "source_file_pattern": "hekate_ctcaer_*.bin",
+            "target_filename": "payload.bin",
+            "target_path": "."
           }
         ]
       }
     ],
     "category": "Essential",
     "description": "Bootloader and tools. Essential.",
-    "name": "Hekate-ext",
-    "repo": "sthetix/hekate-ext",
+    "name": "Hekate & Nyx",
+    "repo": "ctcaer/hekate",
     "source_type": "github_release"
   },
   "jksv": {
@@ -367,6 +233,27 @@
     "repo": "impeeza/linkalho",
     "source_type": "github_release"
   },
+  "lockpick_rcm": {
+    "asset_info": {
+      "version": "1.9.16"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "Lockpick_RCM.bin",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/bootloader/payloads/"
+          }
+        ]
+      }
+    ],
+    "category": "Payloads",
+    "description": "Prod.keys and Prodinfo dumper",
+    "name": "Lockpick_RCM",
+    "repo": "THZoria/Lockpick_RCMaster",
+    "source_type": "github_release"
+  },
   "mission_control": {
     "asset_info": {
       "version": "v0.14.2"
@@ -386,91 +273,6 @@
     "description": "Use other console controllers on your Switch.",
     "name": "MissionControl",
     "repo": "ndeadly/MissionControl",
-    "source_type": "github_release"
-  },
-  "nx-ovlloader": {
-    "asset_info": {
-      "version": "v2.0.0"
-    },
-    "asset_patterns": [
-      {
-        "pattern": "nx-ovlloader.zip",
-        "processing_steps": [
-          {
-            "action": "unzip_to_root"
-          }
-        ]
-      }
-    ],
-    "category": "Patches",
-    "default": false,
-    "description": "Host process for loading Switch overlay OVLs (NROs).",
-    "name": "nx-ovlloader",
-    "repo": "ppkantorski/nx-ovlloader",
-    "source_type": "github_release"
-  },
-  "prodinfo_gen": {
-    "asset_info": {
-      "version": "v1.1.0"
-    },
-    "asset_patterns": [
-      {
-        "pattern": "prodinfo_gen.bin",
-        "processing_steps": [
-          {
-            "action": "copy_file",
-            "target_path": "/bootloader/payloads/"
-          }
-        ]
-      }
-    ],
-    "category": "Payloads",
-    "default": false,
-    "description": "A payload to generate prod.info.",
-    "name": "Prodinfo_gen",
-    "repo": "CaramelDunes/prodinfo_gen",
-    "source_type": "github_release"
-  },
-  "quick_reboot_app": {
-    "asset_info": {
-      "version": "v2.1.0"
-    },
-    "asset_patterns": [
-      {
-        "pattern": "Quick-Reboot.nro",
-        "processing_steps": [
-          {
-            "action": "copy_file",
-            "target_path": "/switch/"
-          }
-        ]
-      }
-    ],
-    "category": "Homebrew Apps",
-    "description": "Reboot to payloads from the homebrew menu.",
-    "name": "Quick-Reboot (App)",
-    "repo": "sthetix/Quick-Reboot",
-    "source_type": "github_release"
-  },
-  "quick_reboot_ovl": {
-    "asset_info": {
-      "version": "v2.1.0"
-    },
-    "asset_patterns": [
-      {
-        "pattern": "Quick-Reboot.ovl",
-        "processing_steps": [
-          {
-            "action": "copy_file",
-            "target_path": "/switch/.overlays/"
-          }
-        ]
-      }
-    ],
-    "category": "Tesla Overlays",
-    "description": "Reboot to payloads from the Tesla.",
-    "name": "Quick-Reboot overlay",
-    "repo": "sthetix/Quick-Reboot",
     "source_type": "github_release"
   },
   "quickntp": {
@@ -493,13 +295,34 @@
     "repo": "nedex/QuickNTP",
     "source_type": "github_release"
   },
-  "sphaira": {
+  "reverse_nx_rt": {
     "asset_info": {
-      "version": "1.0.0"
+      "version": "2.2.1"
     },
     "asset_patterns": [
       {
-        "pattern": "sphaira.zip",
+        "pattern": "ReverseNX-RT-ovl.ovl",
+        "processing_steps": [
+          {
+            "action": "copy_file",
+            "target_path": "/switch/.overlays/"
+          }
+        ]
+      }
+    ],
+    "category": "Tesla Overlays",
+    "description": "Alternative version of ReverseNX that can switch between handheld and docked mode in Real Time.",
+    "name": "ReverseNX-RT",
+    "repo": "masagrator/ReverseNX-RT",
+    "source_type": "github_release"
+  },
+  "salty_nx": {
+    "asset_info": {
+      "version": "1.7.2"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "SaltyNX.zip",
         "processing_steps": [
           {
             "action": "unzip_to_root"
@@ -508,9 +331,29 @@
       }
     ],
     "category": "Homebrew Apps",
-    "description": "A minimal reimplementation of the barrel.",
-    "name": "Sphaira",
-    "repo": "ITotalJustice/sphaira",
+    "description": "",
+    "name": "SaltyNX",
+    "repo": "masagrator/SaltyNX",
+    "source_type": "github_release"
+  },
+  "sigpatches": {
+    "asset_info": {
+      "version": "1.9.8"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "SystemEnhancer*.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "Patches",
+    "description": "Signature patches to run games",
+    "name": "Sigpatches",
+    "repo": "NexlifyHub/SystemEnhancer",
     "source_type": "github_release"
   },
   "status_monitor_overlay": {
@@ -534,7 +377,7 @@
     "repo": "masagrator/Status-Monitor-Overlay",
     "source_type": "github_release"
   },
-  "sys-clk-base": {
+  "sys_clk": {
     "asset_info": {
       "version": "2.0.1"
     },
@@ -548,17 +391,21 @@
           {
             "action": "delete_file",
             "path": "/README.md"
+          },
+          {
+            "action": "delete_file",
+            "path": "/switch/.overlays/sys-clk-overlay.ovl"
           }
         ]
       }
     ],
     "category": "Tesla Overlays",
-    "description": "sys-clk base files",
-    "name": "sys-clk base files",
+    "description": "sys-clk",
+    "name": "sys-clk",
     "repo": "retronx-team/sys-clk",
     "source_type": "github_release"
   },
-  "sys_clk": {
+  "sys_clk_ovl": {
     "asset_info": {
       "version": "2.0.1+r21"
     },
@@ -568,14 +415,14 @@
         "processing_steps": [
           {
             "action": "copy_file",
-            "target_path": "/switch/.overlays"
+            "target_path": "/switch/.overlays/"
           }
         ]
       }
     ],
     "category": "Tesla Overlays",
-    "description": "Sysmodule for overclocking.",
-    "name": "sys-clk",
+    "description": "",
+    "name": "sys-clk-ovl",
     "repo": "ppkantorski/sys-clk",
     "source_type": "github_release"
   },
@@ -621,13 +468,33 @@
     "repo": "ppkantorski/ovl-sysmodules",
     "source_type": "github_release"
   },
-  "tegraexplorer": {
+  "ultrahand_overlay": {
     "asset_info": {
-      "version": "4.2.1"
+      "version": "v2.2.7"
     },
     "asset_patterns": [
       {
-        "pattern": "TegraExplorer*.zip",
+        "pattern": "sdout.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "Tesla Overlays",
+    "description": "",
+    "name": "Ultrahand Overlay",
+    "repo": "ppkantorski/Ultrahand-Overlay",
+    "source_type": "github_release"
+  },
+  "warmboot_extractor": {
+    "asset_info": {
+      "version": "1.0.0"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "Warmboot-Extractor-*.zip",
         "processing_steps": [
           {
             "action": "unzip_to_root"
@@ -636,51 +503,9 @@
       }
     ],
     "category": "Payloads",
-    "description": "A payload-based file explorer.",
-    "name": "TegraExplorer",
-    "repo": "sthetix/TegraExplorer",
-    "source_type": "github_release"
-  },
-  "tinwoo": {
-    "asset_info": {
-      "version": "1.0.28"
-    },
-    "asset_patterns": [
-      {
-        "pattern": "Tinwoo-Installer.zip",
-        "processing_steps": [
-          {
-            "action": "unzip_to_root"
-          }
-        ]
-      }
-    ],
-    "category": "Homebrew Apps",
-    "default": false,
-    "description": "An open-source NSP installer.",
-    "name": "Tinwoo Installer",
-    "repo": "mrdude2478/Tinwoo-Release",
-    "source_type": "github_release"
-  },
-  "ultrahand_overlay": {
-    "asset_info": {
-      "version": "v2.2.7"
-    },
-    "asset_patterns": [
-      {
-        "pattern": "ovlmenu.ovl",
-        "processing_steps": [
-          {
-            "action": "copy_file",
-            "target_path": "/switch/.overlays/"
-          }
-        ]
-      }
-    ],
-    "category": "Tesla Overlays",
-    "description": "A new Tesla menu reimplementation.",
-    "name": "Ultrahand Overlay",
-    "repo": "ppkantorski/Ultrahand-Overlay",
+    "description": "",
+    "name": "Warmboot-Extractor",
+    "repo": "sthetix/Warmboot-Extractor",
     "source_type": "github_release"
   }
 }
