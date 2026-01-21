@@ -377,6 +377,26 @@
     "repo": "masagrator/Status-Monitor-Overlay",
     "source_type": "github_release"
   },
+  "switch_blade": {
+    "asset_info": {
+      "version": "1.0.0"
+    },
+    "asset_patterns": [
+      {
+        "pattern": "SwitchBlade.zip",
+        "processing_steps": [
+          {
+            "action": "unzip_to_root"
+          }
+        ]
+      }
+    ],
+    "category": "Homebrew Apps",
+    "description": "all-in-one Nintendo Switch homebrew tool for managing mods, cheats, CFW updates, and system customization",
+    "name": "SwitchBlade",
+    "repo": "exploitz86/SwitchBlade",
+    "source_type": "github_release"
+  },
   "sys_clk": {
     "asset_info": {
       "version": "2.0.1"
