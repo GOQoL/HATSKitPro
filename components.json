@@ -1,33 +1,11 @@
 {
   "90dns_tester": {
     "asset_info": {
-      "version": "v1.0.4"
+      "version": "1.0.4"
     },
     "asset_patterns": [
       {
-        "pattern": "Switch_90DNS_tester.nro",
-        "processing_steps": [
-          {
-            "action": "copy_file",
-            "target_path": "/switch/"
-          }
-        ]
-      }
-    ],
-    "category": "Homebrew Apps",
-    "default": false,
-    "description": "Tests if 90DNS is configured correctly.",
-    "name": "Switch 90DNS Tester",
-    "repo": "meganukebmp/Switch_90DNS_tester",
-    "source_type": "github_release"
-  },
-  "aio_updater": {
-    "asset_info": {
-      "version": "2.23.3"
-    },
-    "asset_patterns": [
-      {
-        "pattern": "aio-switch-updater.zip",
+        "pattern": "Switch_90DNS_tester-*.zip",
         "processing_steps": [
           {
             "action": "unzip_to_root"
@@ -36,9 +14,10 @@
       }
     ],
     "category": "Homebrew Apps",
-    "description": "Update everything from your Switch.",
-    "name": "AIO-Switch-Updater",
-    "repo": "HamletDuFromage/aio-switch-updater",
+    "default": false,
+    "description": "Tests if 90DNS is configured correctly.",
+    "name": "Switch 90DNS Tester",
+    "repo": "sthetix/Switch_90DNS_tester",
     "source_type": "github_release"
   },
   "atmosphere": {
@@ -102,51 +81,9 @@
     "repo": "rashevskyv/dbi",
     "source_type": "github_release"
   },
-  "edizon_overlay": {
-    "asset_info": {
-      "version": "v1.0.14"
-    },
-    "asset_patterns": [
-      {
-        "pattern": "ovlEdiZon.ovl",
-        "processing_steps": [
-          {
-            "action": "copy_file",
-            "target_path": "/switch/.overlays/"
-          }
-        ]
-      }
-    ],
-    "category": "Tesla Overlays",
-    "description": "Tesla overlay for Edizon.",
-    "name": "Edizon Overlay",
-    "repo": "proferabg/EdiZon-Overlay",
-    "source_type": "github_release"
-  },
-  "emuiibo": {
-    "asset_info": {
-      "version": "1.1.2"
-    },
-    "asset_patterns": [
-      {
-        "pattern": "emuiibo.zip",
-        "processing_steps": [
-          {
-            "action": "unzip_subfolder_to_root",
-            "subfolder_name": "SdOut"
-          }
-        ]
-      }
-    ],
-    "category": "Tesla Overlays",
-    "description": "Virtual amiibo (amiibo emulation) system for Nintendo Switch",
-    "name": "emuiibo",
-    "repo": "XorTroll/emuiibo",
-    "source_type": "github_release"
-  },
   "fps_locker": {
     "asset_info": {
-      "version": "3.2.3"
+      "version": "3.2.3+r1"
     },
     "asset_patterns": [
       {
@@ -162,7 +99,7 @@
     "category": "Tesla Overlays",
     "description": "",
     "name": "FPSLocker",
-    "repo": "masagrator/FPSLocker",
+    "repo": "ppkantorski/FPSLocker",
     "source_type": "github_release"
   },
   "hekate": {
@@ -189,28 +126,6 @@
     "description": "Bootloader and tools. Essential.",
     "name": "Hekate & Nyx",
     "repo": "ctcaer/hekate",
-    "source_type": "github_release"
-  },
-  "jksv": {
-    "asset_info": {
-      "version": "12/02/2025"
-    },
-    "asset_patterns": [
-      {
-        "pattern": "JKSV.nro",
-        "processing_steps": [
-          {
-            "action": "copy_file",
-            "target_path": "/switch/"
-          }
-        ]
-      }
-    ],
-    "category": "Homebrew Apps",
-    "default": false,
-    "description": "Save file backup and restore tool.",
-    "name": "JKSV",
-    "repo": "J-D-K/JKSV",
     "source_type": "github_release"
   },
   "linkalho": {
@@ -277,14 +192,15 @@
   },
   "quickntp": {
     "asset_info": {
-      "version": "1.6.0"
+      "version": "1.6.0+r2"
     },
     "asset_patterns": [
       {
-        "pattern": "quickntp-*.zip",
+        "pattern": "QuickNTP.ovl",
         "processing_steps": [
           {
-            "action": "unzip_to_root"
+            "action": "copy_file",
+            "target_path": "/switch/.overlays/"
           }
         ]
       }
@@ -292,7 +208,7 @@
     "category": "Tesla Overlays",
     "description": "Tesla overlay to sync system clock with an NTP server.",
     "name": "QuickNTP",
-    "repo": "nedex/QuickNTP",
+    "repo": "ppkantorski/QuickNTP",
     "source_type": "github_release"
   },
   "reverse_nx_rt": {
@@ -358,14 +274,15 @@
   },
   "status_monitor_overlay": {
     "asset_info": {
-      "version": "1.3.2"
+      "version": "v1.3.2+r6"
     },
     "asset_patterns": [
       {
-        "pattern": "Status-Monitor-Overlay.zip",
+        "pattern": "Status-Monitor-Overlay.ovl",
         "processing_steps": [
           {
-            "action": "unzip_to_root"
+            "action": "copy_file",
+            "target_path": "/switch/.overlays/"
           }
         ]
       }
@@ -374,7 +291,7 @@
     "default": false,
     "description": "Displays FPS, temps, and clock speeds.",
     "name": "Status Monitor Overlay",
-    "repo": "masagrator/Status-Monitor-Overlay",
+    "repo": "ppkantorski/Status-Monitor-Overlay",
     "source_type": "github_release"
   },
   "switch_blade": {
@@ -407,14 +324,6 @@
         "processing_steps": [
           {
             "action": "unzip_to_root"
-          },
-          {
-            "action": "delete_file",
-            "path": "/README.md"
-          },
-          {
-            "action": "delete_file",
-            "path": "/switch/.overlays/sys-clk-overlay.ovl"
           }
         ]
       }
@@ -422,28 +331,7 @@
     "category": "Tesla Overlays",
     "description": "sys-clk",
     "name": "sys-clk",
-    "repo": "retronx-team/sys-clk",
-    "source_type": "github_release"
-  },
-  "sys_clk_ovl": {
-    "asset_info": {
-      "version": "2.0.1+r21"
-    },
-    "asset_patterns": [
-      {
-        "pattern": "sys-clk-overlay.ovl",
-        "processing_steps": [
-          {
-            "action": "copy_file",
-            "target_path": "/switch/.overlays/"
-          }
-        ]
-      }
-    ],
-    "category": "Tesla Overlays",
-    "description": "",
-    "name": "sys-clk-ovl",
-    "repo": "ppkantorski/sys-clk",
+    "repo": "exploitz86/sys-clk",
     "source_type": "github_release"
   },
   "sys_patch": {
